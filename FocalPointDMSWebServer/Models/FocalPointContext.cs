@@ -15,5 +15,6 @@ namespace FocalPointDMSWebServer.Models
         }
 
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Equipment> Equipment { get; set; }
     }
 }
