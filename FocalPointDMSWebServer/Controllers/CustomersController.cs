@@ -80,7 +80,7 @@ namespace FocalPointDMSWebServer.Controllers
             _context.Customers.Add(customer);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCustomer", new { id = customer.Id }, customer);
+            return CreatedAtAction(nameof(GetCustomer), new { id = customer.Id, name = customer.Name }, customer);
         }
 
         // DELETE: api/Customers/5
