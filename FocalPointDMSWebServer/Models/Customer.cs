@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace FocalPointDMSWebServer.Models
 {
@@ -13,6 +14,8 @@ namespace FocalPointDMSWebServer.Models
         public string City { get; set; }
         public string State { get; set; }
         public int ZipCode { get; set; }
+        public List<Equipment> Equipment { get; set; }
+
 
     }
 }
