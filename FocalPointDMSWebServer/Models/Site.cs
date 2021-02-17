@@ -12,6 +12,7 @@ namespace FocalPointDMSWebServer.Models
         public string City { get; set; }
         public string State { get; set; }
         public int ZipCode { get; set; }
-
+        public List<Equipment> Equipment { get; set; }
+        public List<CustomerContact> CustomerContact { get; set; }
     }
 }
